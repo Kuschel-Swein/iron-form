@@ -2,7 +2,7 @@
 
 require_once 'config.inc.php';
 
-if(!empty($_POST)) {
+if (!empty($_POST)) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -16,7 +16,7 @@ if(!empty($_POST)) {
         echo 'Login successful!';
 
     } else {
-        header('Location: error.php?message=Credentials');
+        echo 'Invalid Credentials';
         exit;
     }
 }
